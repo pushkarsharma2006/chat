@@ -1,0 +1,61 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/x-icon" href="https://connectopia.repl.co/favicon.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Chat | connectopia</title>
+  <link href="chat.css" rel="stylesheet" type="text/css" />
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script> 
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+  <script>
+  var firebaseConfig = {
+  apiKey: "AIzaSyDvekSO0AspCgWZyIW4fPH68nlgC1vk5bU",
+  authDomain: "dr-bot-cvsd.firebaseapp.com",
+  databaseURL: "https://dr-bot-cvsd-default-rtdb.firebaseio.com",
+  projectId: "dr-bot-cvsd",
+  storageBucket: "dr-bot-cvsd.appspot.com",
+  messagingSenderId: "309042927466",
+  appId: "1:309042927466:web:add9de192718a550e43713"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+  </head>
+  <body>
+    <script src="https://connectopia.repl.co/Active.js"></script>
+    <script src="chat.js"></script>
+    <button onclick="alert('Thank you for reporting . We will be looking at the matter shortly')"style="position:fixed;">Report</button>
+   <div class="background"></div>
+    <audio id="noti"src="https://connectopia.repl.co/chat/noti.mp3"></audio>
+    <audio id="noti-bot"src="https://connectopia.repl.co/chat/notifi.mp3"></audio>
+    <audio id="error"src="windows_xp.mp3"></audio>
+    <center><div class="msg_reading_div"id="msg_reading_div"style="display:none;">
+      <b id="Msg_insert">Messages will appear here .</b>
+    </div></center>
+    <br></br>
+    <br></br>
+    <div style="display:none;"id="sender">
+     <input id="msg-bar"placeholder="Type Message"class="bar_send"maxlength='100'>
+     <button onclick="send()"class="button_send">Send</button>
+    </div>
+    <center>
+      <div id="loading"text-align="center">
+        <h2 class="glow">Connecting to the server .....</h2>
+        <br></br>
+        <b class="glow">© Pushkar</b>
+        
+      </div>
+    </center>
+        <div class="typer"id="type"></div>
+    <script>
+      document.getElementById("msg-bar").addEventListener("input", (event) => change());
+      var wage = document.getElementById("msg-bar");
+      wage.addEventListener("keydown", function (e) {
+       if (e.code === "Enter") {  
+           send()
+      }
+});
+  </script>
+  </body>
+</html>
