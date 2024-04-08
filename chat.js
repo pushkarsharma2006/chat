@@ -4,7 +4,7 @@ var user_data_name
 var txt , sender
 var verified
 var html=""
-var home="https://chat.connectopia.repl.co"
+var home="https://sharmapushkar-coder.github.io/chat/"
 
 //setTimeout(function(){
 //        if (Notification.permission === 'granted') {
@@ -20,7 +20,7 @@ var home="https://chat.connectopia.repl.co"
   ///      },3000)
 
 if ( window !== window.parent ) {
-  location.href="https://connectopia.repl.co/unsupported.htm"
+  location.href="about:blank"
 } 
 else {      
  Notification.requestPermission() 
@@ -77,7 +77,8 @@ setTimeout(function(){
      })
   }
   else if(verified==="no"){
-       location.href="https://connectopia.repl.co/about/Activation.html"
+    alert("You are not eligible to join this chat")
+      // location.href="https://connectopia.repl.co/about/Activation.html"
     }
   else{
     document.write("<center><h1>We ran into a problem. </h1><br></br><button onclick='location.href=home'>Refresh</button></center>")
