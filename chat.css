@@ -139,8 +139,7 @@ body {
 }
 .msg_reading_div{
   width:60%;
-  background-image:url('https://chat.connectopia.repl.co/chdivback1.gif');
-  background-size:1000px 600px;
+  position:fixed;
   color:white;
   border:1px solid white;
   border-radius:5px;
