@@ -139,7 +139,6 @@ body {
 }
 .msg_reading_div{
   width:60%;
-  position:absolute;
   color:white;
   border:1px solid white;
   border-radius:5px;
@@ -207,7 +206,10 @@ button{
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
 }
-
+@keyframes rotate {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
 @-webkit-keyframes glow {
   from {
     text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
