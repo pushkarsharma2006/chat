@@ -34,7 +34,7 @@ body {
   border:2px solid yellow ;
 }
 .earth-container {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -45,7 +45,7 @@ body {
 .earth {
   width: 330px; /* Adjust size as needed */
   height: 330px; /* Adjust size as needed */
-  position: absolute;
+  position: sticky;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -139,7 +139,7 @@ body {
 }
 .msg_reading_div{
   width:60%;
-  position:fixed;
+  position:absolute;
   color:white;
   border:1px solid white;
   border-radius:5px;
