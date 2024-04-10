@@ -1,3 +1,4 @@
+
 body {
   background-color:black;
   color:white;
@@ -5,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  height: 100%;
 }
 .pubg-btn {
   background-color: #2f2f2f;
@@ -33,26 +35,24 @@ body {
   border-radius:5px;
   border:2px solid yellow ;
 }
+
+
 .earth-container {
-  position: sticky;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
 .earth {
-  width: 330px; /* Adjust size as needed */
-  height: 330px; /* Adjust size as needed */
-  position: sticky;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url('https://sharmapushkar-coder.github.io/Disclosure/earth.jpg'); /* Path to your SVG image */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('earth.jpg'); /* Path to your Earth image */
   background-size: cover;
-  border-radius: 50%;
-  animation: rotate 25s linear infinite;
+  animation: rotate 20s linear infinite; /* Adjust duration and timing function as needed */
 }
 .menu {
   position: fixed;
@@ -138,13 +138,13 @@ body {
   padding:5px 5px 5px 5px;
 }
 .msg_reading_div{
-  width:60%;
-  color:white;
-  border:1px solid white;
-  border-radius:5px;
-  padding:10px 10px 10px 10;
-  opacity:0.9
-  z-index: 999999;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
 }
 .frame{
   position:fixed;
