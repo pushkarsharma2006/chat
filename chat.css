@@ -121,7 +121,8 @@ body {
 .msg_reading_div{
   padding:10px 10px 10px 10px;
   width:70%;
-  border:white;
+  border-style: solid;
+  border-color: white;
   color: white;
   z-index: 1;
 }
