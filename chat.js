@@ -6,18 +6,18 @@ var verified
 var html=""
 var home="https://sharmapushkar-coder.github.io/chat/"
 
-//setTimeout(function(){
-//        if (Notification.permission === 'granted') {
-///          var notification = new Notification('Buy Premium plans at just ₹10 ', {
-///          body: 'Get more out of chat with premium . BUY NOW',
-//          icon: 'https://connectopia.repl.co/maps.jpeg'
-//        });
-//
- ///       notification.onclick = function() {
-    //    window.open('http://connectopia.repl.co/#noti=premium&&type=auto');
-  //   /  };
-    //  }          
-  ///      },3000)
+setTimeout(function(){
+        if (Notification.permission === 'granted') {
+          var notification = new Notification('Buy Premium plans at just ₹10 ', {
+          body: 'Notifications have been enabled.',
+          icon: 'https://sharmapushkar-coder.github.io/Disclosure/LOGO.JPG'
+        });
+
+        notification.onclick = function() {
+         alert("You can disable notifications at any time by clicking on the settings button at the left hand side of the url bar in your browser. Thank You")
+        };
+      }          
+       },3000)
 
 if ( window !== window.parent ) {
   location.href="about:blank"
