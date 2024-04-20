@@ -140,11 +140,11 @@ body {
   right:5px;
 }
 .bar_send{
-  width:85%;
-  height:50px;
+  width:20%;
+  height:30%;
   position:fixed;
-  bottom:2px;
-  left:2px;
+  top:2px;
+  right:2px;
   
 }
 video{
