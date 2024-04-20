@@ -106,6 +106,8 @@ body {
   padding:5px 5px 5px 5px;
 }
 .msg_reading_div{
+  position:absolute;
+  top:2px;
   padding:10px 10px 10px 10px;
   width:70%;
   border-style: solid;
