@@ -6,18 +6,29 @@ var verified
 var html=""
 var home="https://sharmapushkar-coder.github.io/chat/"
 
-setTimeout(function(){
-        if (Notification.permission === 'granted') {
-          var notification = new Notification('Buy Premium plans at just ₹10 ', {
-          body: 'Notifications have been enabled.',
-          icon: 'https://sharmapushkar-coder.github.io/Disclosure/LOGO.JPG'
-        });
+// Check if the browser supports notifications
+if ('Notification' in window) {
+  // Request permission for the browser to send notifications
+  Notification.requestPermission().then(function(permission) {
+    // If permission is granted
+    if (permission === 'granted') {
+      // Create a new notification
+      var notification = new Notification('Welcome to the Chat ', {
+        body: 'By using this webpage you accept that you will not use any false language which can hurt somebodies feeling. If cought your account and device would be blocked from using this webpage/app'
+      });
+      
+      // Optionally, you can add an event listener to handle clicks on the notification
+      notification.addEventListener('click', function() {
+        // Handle notification click event
+         alert('Thank you for reading, Now it time to send a Hi to the others.')
+      });
+    }
+  });
+} else {
+  // Browser doesn't support notifications
+  console.log('Notifications not supported in this browser.');
+}
 
-        notification.onclick = function() {
-         alert("You can disable notifications at any time by clicking on the settings button at the left hand side of the url bar in your browser. Thank You")
-        };
-      }          
-       },3000)
 
 if ( window !== window.parent ) {
   location.href="about:blank"
