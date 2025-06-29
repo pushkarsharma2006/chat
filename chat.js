@@ -4,7 +4,7 @@ var user_data_name
 var txt , sender
 var verified
 var html=""
-var home="https://sharmapushkar-coder.github.io/chat/"
+var home="https://pushkarsharma2006.github.io/chat/"
 
 // Check if the browser supports notifications
 if ('Notification' in window) {
