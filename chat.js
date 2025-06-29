@@ -74,7 +74,7 @@ setTimeout(function(){
       }
       else if(typeof sender==="undefined"||sender===null||sender===""){
           //document.getElementById("noti-bot").play();
-           html="<br></br><center><li style='background-color:white;color:black;padding:6px 6px 6px 6px;'>"+txt+"</li></center><br></br>"
+           html="<br></br><center><li style='background-color:white;color:black;padding:10px 10px 10px 10px;border-radius:3px;'>"+txt+"</li></center><br></br>"
         document.getElementById("Msg_insert").innerHTML+=html
       }
       else{
@@ -89,6 +89,7 @@ setTimeout(function(){
   }
   else if(verified==="no"){
     alert("You are not eligible to join this chat")
+    location.href="about:blank#blocked"
       // location.href="https://connectopia.repl.co/about/Activation.html"
     }
   else{
